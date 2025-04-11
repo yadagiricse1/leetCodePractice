@@ -1,7 +1,5 @@
 package practice;
 
-import java.util.Arrays;
-
 public class GameOfLife {
 // without any additional space solution
     public static void gameOfLife(int[][] board){

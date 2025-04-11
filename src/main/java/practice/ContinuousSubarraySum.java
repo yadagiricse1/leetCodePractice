@@ -19,8 +19,6 @@ public class ContinuousSubarraySum {
             }
         }
 
-
-
         return false;
 
     }
