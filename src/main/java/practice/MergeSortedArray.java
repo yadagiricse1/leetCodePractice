@@ -16,6 +16,8 @@ public class MergeSortedArray {
                 nums1[p]= nums2[p2--];
             }
         }
+
+
     }
 
     public static void main(String[] args) {

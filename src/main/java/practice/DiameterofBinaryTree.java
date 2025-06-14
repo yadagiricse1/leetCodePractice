@@ -5,15 +5,15 @@ public class DiameterofBinaryTree {
 
     public int diameterOfBinaryTree(TreeNode root) {
         heightOfBinaryTree(root);
-      return max-1;
+      return max;
     }
 
     private int heightOfBinaryTree(TreeNode root) {
         if(root!=null){
-            int left = heightOfBinaryTree(root.left)+1;
-            int right = heightOfBinaryTree(root.right)+1;
-            max =Math.max(left+right-1,max);
-            return Math.max(left,right);
+            int left = heightOfBinaryTree(root.left);
+            int right = heightOfBinaryTree(root.right);
+            max =Math.max(left+right,max);
+            return Math.max(left,right)+1;
         } else{
             return 0;
         }

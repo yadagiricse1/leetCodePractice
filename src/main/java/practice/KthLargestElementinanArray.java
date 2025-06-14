@@ -1,8 +1,11 @@
 package practice;
 
 import java.util.PriorityQueue;
+import java.util.*;
+
 
 public class KthLargestElementinanArray {
+
 
     public static int findKthLargest(int[] nums, int k) {
         /*Arrays.sort(nums);
@@ -18,6 +21,10 @@ public class KthLargestElementinanArray {
         }
 
         return queue.peek();
+    }
+    public int findKthLargest1(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[nums.length-k];
     }
 
     public static void main(String[] args) {
